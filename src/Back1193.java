@@ -36,10 +36,10 @@ public class Back1193 {
         int b = 1;
         int length = a - b + 1;
 
-        String[] arr = new String[X];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = a + "/" + b;
+        for (int i = 0; i < X; i++) {
             count++;
+            if (i == X - 1)
+                System.out.print(a + "/" + b);
             if (length == count) {
                 // 원하는 만큼 배열을 넣었다면 아래를 수행해준다.
                 if (a > b) {
@@ -65,8 +65,8 @@ public class Back1193 {
                 }
             }
         }
-        System.out.println(arr[arr.length - 1]);
     }
     //값은 정확히 나오지만 메모리 오류가 난다.
     //다시 문제 풀어야함 메모리가 적은 방향으로
+    //ㅇㅋ 위 방식대로 수정하면 통과
 }
